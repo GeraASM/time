@@ -26,6 +26,7 @@
 
     --navy-950: hsl(226, 43%, 10%);
     --navy-900: hsl(235, 46%, 20%);
+    --navy-800: #33397A;
     --Purple-500: hsl(235, 45%, 61%);
     --navy-200: hsl(236, 100%, 87%);
 
@@ -51,7 +52,6 @@ img {
     width: 21px;
     height: 5px;
 }
-
 
 /* mobile, tablet, desktop */
 .text-present-5-medium {
@@ -127,6 +127,13 @@ img {
     justify-content: space-between;
 }
 
+.over {
+    cursor: pointer;
+}
+
+.over:hover {
+    color: #fff;
+}
 
 
 .activities { /* recuerda eliminar el margin-t9pdesktop*/
@@ -158,12 +165,21 @@ img {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-100);
+    cursor: pointer;
+}
+
+.activity__container:hover {
+    background-color: var(--navy-800);
 }
 
 .part-up {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.ellipsis:hover path {
+    fill: #fff;
 }
 
 .part-down {
@@ -207,7 +223,7 @@ img {
 }
 
 
-/*  */
+/* -------------------------------------------> */
 .selection {
     color: #fff;
 }
